@@ -1,0 +1,42 @@
+name: Rename Go Module and Create ZIP
+
+# This workflow can be triggered manually from the "Actions" tab in GitHub.
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # 步骤 1: 检出代码
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      # 步骤 2: 批量替换所有 .go 文件中的模块路径
+      - name: Find and replace module paths in .go files
+        # 使用 find 结合 xargs 和 sed 来高效地批量替换
+        run: |
+          find . -type f -name "*.go" -print0 | xargs -0 sed -i 's|github.com/v2fly/v2ray-core/v5|github.com/v4fly/v4ray-core/v0|g'
+
+      # 步骤 3: 更新 go.mod 文件中的模块名
+      - name: Update go.mod
+        run: |
+          # 确保安装了 Go 语言环境
+          sudo apt-get update && sudo apt-get install golang-go
+          # 使用 go mod edit 命令更新模块名
+          go mod edit -module github.com/v4fly/v4ray-core/v0
+          
+      # 步骤 4: 打包修改后的文件
+      - name: Create a ZIP archive
+        run: |
+          # 排除 .git 目录以减小文件大小
+          zip -r "v4ray-core-renamed.zip" . -x ".git/*"
+
+      # 步骤 5: 将 ZIP 文件作为产物上传
+      - name: Upload ZIP artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: renamed-v4ray-core
+          path: v4ray-core-renamed.zip
+          retention-days: 7 # 设置产物的保留天数，过期后自动删除
