@@ -7,21 +7,21 @@ import (
 
 	"google.golang.org/protobuf/types/known/anypb"
 
-	core "github.com/v2fly/v2ray-core/v5"
-	"github.com/v2fly/v2ray-core/v5/app/policy"
-	. "github.com/v2fly/v2ray-core/v5/app/proxyman/outbound"
-	"github.com/v2fly/v2ray-core/v5/app/stats"
-	"github.com/v2fly/v2ray-core/v5/common/environment"
-	"github.com/v2fly/v2ray-core/v5/common/environment/deferredpersistentstorage"
-	"github.com/v2fly/v2ray-core/v5/common/environment/envctx"
-	"github.com/v2fly/v2ray-core/v5/common/environment/filesystemimpl"
-	"github.com/v2fly/v2ray-core/v5/common/environment/systemnetworkimpl"
-	"github.com/v2fly/v2ray-core/v5/common/environment/transientstorageimpl"
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/common/serial"
-	"github.com/v2fly/v2ray-core/v5/features/outbound"
-	"github.com/v2fly/v2ray-core/v5/proxy/freedom"
-	"github.com/v2fly/v2ray-core/v5/transport/internet"
+	core "github.com/v4fly/v4ray-core/v0"
+	"github.com/v4fly/v4ray-core/v0/app/policy"
+	. "github.com/v4fly/v4ray-core/v0/app/proxyman/outbound"
+	"github.com/v4fly/v4ray-core/v0/app/stats"
+	"github.com/v4fly/v4ray-core/v0/common/environment"
+	"github.com/v4fly/v4ray-core/v0/common/environment/deferredpersistentstorage"
+	"github.com/v4fly/v4ray-core/v0/common/environment/envctx"
+	"github.com/v4fly/v4ray-core/v0/common/environment/filesystemimpl"
+	"github.com/v4fly/v4ray-core/v0/common/environment/systemnetworkimpl"
+	"github.com/v4fly/v4ray-core/v0/common/environment/transientstorageimpl"
+	"github.com/v4fly/v4ray-core/v0/common/net"
+	"github.com/v4fly/v4ray-core/v0/common/serial"
+	"github.com/v4fly/v4ray-core/v0/features/outbound"
+	"github.com/v4fly/v4ray-core/v0/proxy/freedom"
+	"github.com/v4fly/v4ray-core/v0/transport/internet"
 )
 
 func TestInterfaces(t *testing.T) {
@@ -29,7 +29,7 @@ func TestInterfaces(t *testing.T) {
 	_ = (outbound.Manager)(new(Manager))
 }
 
-//go:linkname toContext github.com/v2fly/v2ray-core/v5.toContext
+//go:linkname toContext github.com/v4fly/v4ray-core/v0.toContext
 func toContext(ctx context.Context, v *core.Instance) context.Context
 
 func TestOutboundWithoutStatCounter(t *testing.T) {

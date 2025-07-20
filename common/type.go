@@ -4,7 +4,7 @@ import (
 	"context"
 	"reflect"
 
-	"github.com/v2fly/v2ray-core/v5/common/registry"
+	"github.com/v4fly/v4ray-core/v0/common/registry"
 )
 
 // ConfigCreator is a function to create an object by a config.

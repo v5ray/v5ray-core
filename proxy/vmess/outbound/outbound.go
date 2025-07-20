@@ -1,6 +1,6 @@
 package outbound
 
-//go:generate go run github.com/v2fly/v2ray-core/v5/common/errors/errorgen
+//go:generate go run github.com/v4fly/v4ray-core/v0/common/errors/errorgen
 
 import (
 	"context"
@@ -8,23 +8,23 @@ import (
 	"crypto/sha256"
 	"hash/crc64"
 
-	core "github.com/v2fly/v2ray-core/v5"
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/buf"
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/common/platform"
-	"github.com/v2fly/v2ray-core/v5/common/protocol"
-	"github.com/v2fly/v2ray-core/v5/common/retry"
-	"github.com/v2fly/v2ray-core/v5/common/serial"
-	"github.com/v2fly/v2ray-core/v5/common/session"
-	"github.com/v2fly/v2ray-core/v5/common/signal"
-	"github.com/v2fly/v2ray-core/v5/common/task"
-	"github.com/v2fly/v2ray-core/v5/features/policy"
-	"github.com/v2fly/v2ray-core/v5/proxy"
-	"github.com/v2fly/v2ray-core/v5/proxy/vmess"
-	"github.com/v2fly/v2ray-core/v5/proxy/vmess/encoding"
-	"github.com/v2fly/v2ray-core/v5/transport"
-	"github.com/v2fly/v2ray-core/v5/transport/internet"
+	core "github.com/v4fly/v4ray-core/v0"
+	"github.com/v4fly/v4ray-core/v0/common"
+	"github.com/v4fly/v4ray-core/v0/common/buf"
+	"github.com/v4fly/v4ray-core/v0/common/net"
+	"github.com/v4fly/v4ray-core/v0/common/platform"
+	"github.com/v4fly/v4ray-core/v0/common/protocol"
+	"github.com/v4fly/v4ray-core/v0/common/retry"
+	"github.com/v4fly/v4ray-core/v0/common/serial"
+	"github.com/v4fly/v4ray-core/v0/common/session"
+	"github.com/v4fly/v4ray-core/v0/common/signal"
+	"github.com/v4fly/v4ray-core/v0/common/task"
+	"github.com/v4fly/v4ray-core/v0/features/policy"
+	"github.com/v4fly/v4ray-core/v0/proxy"
+	"github.com/v4fly/v4ray-core/v0/proxy/vmess"
+	"github.com/v4fly/v4ray-core/v0/proxy/vmess/encoding"
+	"github.com/v4fly/v4ray-core/v0/transport"
+	"github.com/v4fly/v4ray-core/v0/transport/internet"
 )
 
 // Handler is an outbound connection handler for VMess protocol.

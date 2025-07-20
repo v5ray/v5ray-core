@@ -5,9 +5,9 @@ import (
 
 	"golang.org/x/sys/cpu"
 
-	"github.com/v2fly/v2ray-core/v5/common/bitmask"
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/common/uuid"
+	"github.com/v4fly/v4ray-core/v0/common/bitmask"
+	"github.com/v4fly/v4ray-core/v0/common/net"
+	"github.com/v4fly/v4ray-core/v0/common/uuid"
 )
 
 // RequestCommand is a custom command in a proxy request.

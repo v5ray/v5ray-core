@@ -1,6 +1,6 @@
 package protocol
 
-import "github.com/v2fly/v2ray-core/v5/common/serial"
+import "github.com/v4fly/v4ray-core/v0/common/serial"
 
 func (u *User) GetTypedAccount() (Account, error) {
 	if u.GetAccount() == nil {

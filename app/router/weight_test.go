@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/v2fly/v2ray-core/v5/app/router"
+	"github.com/v4fly/v4ray-core/v0/app/router"
 )
 
 func TestWeight(t *testing.T) {

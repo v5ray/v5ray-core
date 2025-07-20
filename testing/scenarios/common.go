@@ -17,16 +17,16 @@ import (
 
 	"google.golang.org/protobuf/proto"
 
-	core "github.com/v2fly/v2ray-core/v5"
-	"github.com/v2fly/v2ray-core/v5/app/dispatcher"
-	"github.com/v2fly/v2ray-core/v5/app/proxyman"
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/errors"
-	"github.com/v2fly/v2ray-core/v5/common/log"
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/common/retry"
-	"github.com/v2fly/v2ray-core/v5/common/serial"
-	"github.com/v2fly/v2ray-core/v5/common/units"
+	core "github.com/v4fly/v4ray-core/v0"
+	"github.com/v4fly/v4ray-core/v0/app/dispatcher"
+	"github.com/v4fly/v4ray-core/v0/app/proxyman"
+	"github.com/v4fly/v4ray-core/v0/common"
+	"github.com/v4fly/v4ray-core/v0/common/errors"
+	"github.com/v4fly/v4ray-core/v0/common/log"
+	"github.com/v4fly/v4ray-core/v0/common/net"
+	"github.com/v4fly/v4ray-core/v0/common/retry"
+	"github.com/v4fly/v4ray-core/v0/common/serial"
+	"github.com/v4fly/v4ray-core/v0/common/units"
 )
 
 func xor(b []byte) []byte {

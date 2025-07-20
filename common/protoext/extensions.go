@@ -6,7 +6,7 @@ import (
 	"google.golang.org/protobuf/types/descriptorpb"
 )
 
-//go:generate go run github.com/v2fly/v2ray-core/v5/common/errors/errorgen
+//go:generate go run github.com/v4fly/v4ray-core/v0/common/errors/errorgen
 
 func GetMessageOptions(msgDesc protoreflect.MessageDescriptor) (*MessageOpt, error) {
 	msgOpt := msgDesc.Options().(*descriptorpb.MessageOptions)

@@ -3,7 +3,7 @@ package policy
 import (
 	"time"
 
-	"github.com/v2fly/v2ray-core/v5/features/policy"
+	"github.com/v4fly/v4ray-core/v0/features/policy"
 )
 
 // Duration converts Second to time.Duration.

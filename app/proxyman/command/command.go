@@ -5,12 +5,12 @@ import (
 
 	grpc "google.golang.org/grpc"
 
-	core "github.com/v2fly/v2ray-core/v5"
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/serial"
-	"github.com/v2fly/v2ray-core/v5/features/inbound"
-	"github.com/v2fly/v2ray-core/v5/features/outbound"
-	"github.com/v2fly/v2ray-core/v5/proxy"
+	core "github.com/v4fly/v4ray-core/v0"
+	"github.com/v4fly/v4ray-core/v0/common"
+	"github.com/v4fly/v4ray-core/v0/common/serial"
+	"github.com/v4fly/v4ray-core/v0/features/inbound"
+	"github.com/v4fly/v4ray-core/v0/features/outbound"
+	"github.com/v4fly/v4ray-core/v0/proxy"
 )
 
 // InboundOperation is the interface for operations that applies to inbound handlers.

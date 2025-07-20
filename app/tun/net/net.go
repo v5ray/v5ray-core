@@ -1,7 +1,7 @@
 package net
 
 import (
-	"github.com/v2fly/v2ray-core/v5/common/net"
+	"github.com/v4fly/v4ray-core/v0/common/net"
 
 	"gvisor.dev/gvisor/pkg/tcpip"
 	"gvisor.dev/gvisor/pkg/tcpip/stack"

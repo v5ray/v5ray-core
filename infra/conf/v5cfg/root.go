@@ -9,14 +9,14 @@ import (
 	"github.com/golang/protobuf/proto"
 	"google.golang.org/protobuf/types/known/anypb"
 
-	core "github.com/v2fly/v2ray-core/v5"
-	"github.com/v2fly/v2ray-core/v5/app/dispatcher"
-	"github.com/v2fly/v2ray-core/v5/app/proxyman"
-	"github.com/v2fly/v2ray-core/v5/common/platform"
-	"github.com/v2fly/v2ray-core/v5/common/serial"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/cfgcommon"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/geodata"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/synthetic/log"
+	core "github.com/v4fly/v4ray-core/v0"
+	"github.com/v4fly/v4ray-core/v0/app/dispatcher"
+	"github.com/v4fly/v4ray-core/v0/app/proxyman"
+	"github.com/v4fly/v4ray-core/v0/common/platform"
+	"github.com/v4fly/v4ray-core/v0/common/serial"
+	"github.com/v4fly/v4ray-core/v0/infra/conf/cfgcommon"
+	"github.com/v4fly/v4ray-core/v0/infra/conf/geodata"
+	"github.com/v4fly/v4ray-core/v0/infra/conf/synthetic/log"
 )
 
 func (c RootConfig) BuildV5(ctx context.Context) (proto.Message, error) {

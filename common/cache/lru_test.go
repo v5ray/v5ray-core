@@ -3,7 +3,7 @@ package cache_test
 import (
 	"testing"
 
-	. "github.com/v2fly/v2ray-core/v5/common/cache"
+	. "github.com/v4fly/v4ray-core/v0/common/cache"
 )
 
 func TestLruReplaceValue(t *testing.T) {

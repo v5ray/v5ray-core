@@ -18,7 +18,7 @@ import (
 	"bytes"
 	"encoding/json"
 
-	"github.com/v2fly/v2ray-core/v5/infra/conf/serial"
+	"github.com/v4fly/v4ray-core/v0/infra/conf/serial"
 )
 
 // JSONs merges multiple json contents into one json.

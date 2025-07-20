@@ -5,8 +5,8 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/v2fly/v2ray-core/v5/common/platform"
-	"github.com/v2fly/v2ray-core/v5/features"
+	"github.com/v4fly/v4ray-core/v0/common/platform"
+	"github.com/v4fly/v4ray-core/v0/features"
 )
 
 // Timeout contains limits for connection timeout.

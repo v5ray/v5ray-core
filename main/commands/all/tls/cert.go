@@ -8,10 +8,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/protocol/tls/cert"
-	"github.com/v2fly/v2ray-core/v5/common/task"
-	"github.com/v2fly/v2ray-core/v5/main/commands/base"
+	"github.com/v4fly/v4ray-core/v0/common"
+	"github.com/v4fly/v4ray-core/v0/common/protocol/tls/cert"
+	"github.com/v4fly/v4ray-core/v0/common/task"
+	"github.com/v4fly/v4ray-core/v0/main/commands/base"
 )
 
 // cmdCert is the tls cert command

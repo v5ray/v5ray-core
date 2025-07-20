@@ -1,6 +1,6 @@
 package commander
 
-//go:generate go run github.com/v2fly/v2ray-core/v5/common/errors/errorgen
+//go:generate go run github.com/v4fly/v4ray-core/v0/common/errors/errorgen
 
 import (
 	"context"
@@ -9,13 +9,13 @@ import (
 
 	"google.golang.org/grpc"
 
-	core "github.com/v2fly/v2ray-core/v5"
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/serial"
-	"github.com/v2fly/v2ray-core/v5/common/signal/done"
-	"github.com/v2fly/v2ray-core/v5/features"
-	"github.com/v2fly/v2ray-core/v5/features/outbound"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/v5cfg"
+	core "github.com/v4fly/v4ray-core/v0"
+	"github.com/v4fly/v4ray-core/v0/common"
+	"github.com/v4fly/v4ray-core/v0/common/serial"
+	"github.com/v4fly/v4ray-core/v0/common/signal/done"
+	"github.com/v4fly/v4ray-core/v0/features"
+	"github.com/v4fly/v4ray-core/v0/features/outbound"
+	"github.com/v4fly/v4ray-core/v0/infra/conf/v5cfg"
 )
 
 type CommanderIfce interface {

@@ -8,8 +8,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/v2fly/v2ray-core/v5/app/subscription/entries/nonnative"
-	"github.com/v2fly/v2ray-core/v5/main/commands/base"
+	"github.com/v4fly/v4ray-core/v0/app/subscription/entries/nonnative"
+	"github.com/v4fly/v4ray-core/v0/main/commands/base"
 )
 
 type valueContainer struct {

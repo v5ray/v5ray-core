@@ -1,9 +1,9 @@
 package envimpl
 
 import (
-	"github.com/v2fly/v2ray-core/v5/common/environment"
-	"github.com/v2fly/v2ray-core/v5/common/platform/filesystem"
-	"github.com/v2fly/v2ray-core/v5/common/platform/filesystem/fsifce"
+	"github.com/v4fly/v4ray-core/v0/common/environment"
+	"github.com/v4fly/v4ray-core/v0/common/platform/filesystem"
+	"github.com/v4fly/v4ray-core/v0/common/platform/filesystem/fsifce"
 )
 
 type fileSystemDefaultImpl struct{}

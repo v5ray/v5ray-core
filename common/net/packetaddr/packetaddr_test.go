@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/v2fly/v2ray-core/v5/common/buf"
+	"github.com/v4fly/v4ray-core/v0/common/buf"
 )
 
 func TestPacketEncodingIPv4(t *testing.T) {

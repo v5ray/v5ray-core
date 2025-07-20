@@ -6,13 +6,13 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/v2fly/v2ray-core/v5/app/router"
-	"github.com/v2fly/v2ray-core/v5/app/router/routercommon"
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/cfgcommon"
+	"github.com/v4fly/v4ray-core/v0/app/router"
+	"github.com/v4fly/v4ray-core/v0/app/router/routercommon"
+	"github.com/v4fly/v4ray-core/v0/common/net"
+	"github.com/v4fly/v4ray-core/v0/infra/conf/cfgcommon"
 )
 
-//go:generate go run github.com/v2fly/v2ray-core/v5/common/errors/errorgen
+//go:generate go run github.com/v4fly/v4ray-core/v0/common/errors/errorgen
 
 func parseDomainRule(ctx context.Context, domain string) ([]*routercommon.Domain, error) {
 	cfgEnv := cfgcommon.GetConfigureLoadingEnvironment(ctx)

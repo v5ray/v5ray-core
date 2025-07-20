@@ -1,8 +1,8 @@
 package dns
 
 import (
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/features"
+	"github.com/v4fly/v4ray-core/v0/common/net"
+	"github.com/v4fly/v4ray-core/v0/features"
 )
 
 // FakeDNSEngine is a V2Ray feature for converting between domain and fake IPs.

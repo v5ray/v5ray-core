@@ -7,20 +7,20 @@ import (
 	"sync"
 	"time"
 
-	core "github.com/v2fly/v2ray-core/v5"
-	"github.com/v2fly/v2ray-core/v5/app/persistentstorage"
-	"github.com/v2fly/v2ray-core/v5/app/persistentstorage/protostorage"
-	"github.com/v2fly/v2ray-core/v5/app/subscription"
-	"github.com/v2fly/v2ray-core/v5/app/subscription/entries"
-	"github.com/v2fly/v2ray-core/v5/app/subscription/entries/nonnative/nonnativeifce"
-	"github.com/v2fly/v2ray-core/v5/app/subscription/specs"
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/environment"
-	"github.com/v2fly/v2ray-core/v5/common/environment/envctx"
-	"github.com/v2fly/v2ray-core/v5/common/task"
+	core "github.com/v4fly/v4ray-core/v0"
+	"github.com/v4fly/v4ray-core/v0/app/persistentstorage"
+	"github.com/v4fly/v4ray-core/v0/app/persistentstorage/protostorage"
+	"github.com/v4fly/v4ray-core/v0/app/subscription"
+	"github.com/v4fly/v4ray-core/v0/app/subscription/entries"
+	"github.com/v4fly/v4ray-core/v0/app/subscription/entries/nonnative/nonnativeifce"
+	"github.com/v4fly/v4ray-core/v0/app/subscription/specs"
+	"github.com/v4fly/v4ray-core/v0/common"
+	"github.com/v4fly/v4ray-core/v0/common/environment"
+	"github.com/v4fly/v4ray-core/v0/common/environment/envctx"
+	"github.com/v4fly/v4ray-core/v0/common/task"
 )
 
-//go:generate go run github.com/v2fly/v2ray-core/v5/common/errors/errorgen
+//go:generate go run github.com/v4fly/v4ray-core/v0/common/errors/errorgen
 
 type SubscriptionManagerImpl struct {
 	sync.Mutex

@@ -1,6 +1,6 @@
 package dispatcher
 
-//go:generate go run github.com/v2fly/v2ray-core/v5/common/errors/errorgen
+//go:generate go run github.com/v4fly/v4ray-core/v0/common/errors/errorgen
 
 import (
 	"context"
@@ -8,21 +8,21 @@ import (
 	"sync"
 	"time"
 
-	core "github.com/v2fly/v2ray-core/v5"
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/buf"
-	"github.com/v2fly/v2ray-core/v5/common/log"
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/common/protocol"
-	"github.com/v2fly/v2ray-core/v5/common/session"
-	"github.com/v2fly/v2ray-core/v5/common/strmatcher"
-	"github.com/v2fly/v2ray-core/v5/features/outbound"
-	"github.com/v2fly/v2ray-core/v5/features/policy"
-	"github.com/v2fly/v2ray-core/v5/features/routing"
-	routing_session "github.com/v2fly/v2ray-core/v5/features/routing/session"
-	"github.com/v2fly/v2ray-core/v5/features/stats"
-	"github.com/v2fly/v2ray-core/v5/transport"
-	"github.com/v2fly/v2ray-core/v5/transport/pipe"
+	core "github.com/v4fly/v4ray-core/v0"
+	"github.com/v4fly/v4ray-core/v0/common"
+	"github.com/v4fly/v4ray-core/v0/common/buf"
+	"github.com/v4fly/v4ray-core/v0/common/log"
+	"github.com/v4fly/v4ray-core/v0/common/net"
+	"github.com/v4fly/v4ray-core/v0/common/protocol"
+	"github.com/v4fly/v4ray-core/v0/common/session"
+	"github.com/v4fly/v4ray-core/v0/common/strmatcher"
+	"github.com/v4fly/v4ray-core/v0/features/outbound"
+	"github.com/v4fly/v4ray-core/v0/features/policy"
+	"github.com/v4fly/v4ray-core/v0/features/routing"
+	routing_session "github.com/v4fly/v4ray-core/v0/features/routing/session"
+	"github.com/v4fly/v4ray-core/v0/features/stats"
+	"github.com/v4fly/v4ray-core/v0/transport"
+	"github.com/v4fly/v4ray-core/v0/transport/pipe"
 )
 
 var errSniffingTimeout = newError("timeout on sniffing")

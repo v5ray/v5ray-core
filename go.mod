@@ -1,4 +1,4 @@
-module github.com/v2fly/v2ray-core/v5
+module github.com/v4fly/v4ray-core/v0
 
 go 1.24
 

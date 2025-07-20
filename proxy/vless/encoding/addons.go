@@ -8,9 +8,9 @@ import (
 
 	"google.golang.org/protobuf/proto"
 
-	"github.com/v2fly/v2ray-core/v5/common/buf"
-	"github.com/v2fly/v2ray-core/v5/common/errors"
-	"github.com/v2fly/v2ray-core/v5/common/protocol"
+	"github.com/v4fly/v4ray-core/v0/common/buf"
+	"github.com/v4fly/v4ray-core/v0/common/errors"
+	"github.com/v4fly/v4ray-core/v0/common/protocol"
 )
 
 // EncodeHeaderAddons Add addons byte to the header

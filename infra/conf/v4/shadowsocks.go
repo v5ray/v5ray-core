@@ -3,11 +3,11 @@ package v4
 import (
 	"github.com/golang/protobuf/proto"
 
-	"github.com/v2fly/v2ray-core/v5/common/net/packetaddr"
-	"github.com/v2fly/v2ray-core/v5/common/protocol"
-	"github.com/v2fly/v2ray-core/v5/common/serial"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/cfgcommon"
-	"github.com/v2fly/v2ray-core/v5/proxy/shadowsocks"
+	"github.com/v4fly/v4ray-core/v0/common/net/packetaddr"
+	"github.com/v4fly/v4ray-core/v0/common/protocol"
+	"github.com/v4fly/v4ray-core/v0/common/serial"
+	"github.com/v4fly/v4ray-core/v0/infra/conf/cfgcommon"
+	"github.com/v4fly/v4ray-core/v0/proxy/shadowsocks"
 )
 
 type ShadowsocksServerConfig struct {

@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	. "github.com/v2fly/v2ray-core/v5/infra/conf/json"
+	. "github.com/v4fly/v4ray-core/v0/infra/conf/json"
 )
 
 func TestTOMLToJSON_V2Style(t *testing.T) {

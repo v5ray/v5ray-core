@@ -5,7 +5,7 @@ import (
 	"google.golang.org/protobuf/reflect/protoreflect"
 	"google.golang.org/protobuf/types/known/anypb"
 
-	"github.com/v2fly/v2ray-core/v5/common/serial"
+	"github.com/v4fly/v4ray-core/v0/common/serial"
 )
 
 type V2JsonProtobufFollowerFieldDescriptor struct {

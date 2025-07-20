@@ -4,8 +4,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/v2fly/v2ray-core/v5/common"
-	. "github.com/v2fly/v2ray-core/v5/common/strmatcher"
+	"github.com/v4fly/v4ray-core/v0/common"
+	. "github.com/v4fly/v4ray-core/v0/common/strmatcher"
 )
 
 // See https://github.com/v2fly/v2ray-core/issues/92#issuecomment-673238489

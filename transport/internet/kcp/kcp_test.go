@@ -7,22 +7,22 @@ import (
 	"testing"
 	"time"
 
-	"github.com/v2fly/v2ray-core/v5/common/environment/deferredpersistentstorage"
-	"github.com/v2fly/v2ray-core/v5/common/environment/filesystemimpl"
+	"github.com/v4fly/v4ray-core/v0/common/environment/deferredpersistentstorage"
+	"github.com/v4fly/v4ray-core/v0/common/environment/filesystemimpl"
 
-	"github.com/v2fly/v2ray-core/v5/common/environment"
-	"github.com/v2fly/v2ray-core/v5/common/environment/envctx"
-	"github.com/v2fly/v2ray-core/v5/common/environment/systemnetworkimpl"
-	"github.com/v2fly/v2ray-core/v5/common/environment/transientstorageimpl"
+	"github.com/v4fly/v4ray-core/v0/common/environment"
+	"github.com/v4fly/v4ray-core/v0/common/environment/envctx"
+	"github.com/v4fly/v4ray-core/v0/common/environment/systemnetworkimpl"
+	"github.com/v4fly/v4ray-core/v0/common/environment/transientstorageimpl"
 
 	"github.com/google/go-cmp/cmp"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/errors"
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/transport/internet"
-	. "github.com/v2fly/v2ray-core/v5/transport/internet/kcp"
+	"github.com/v4fly/v4ray-core/v0/common"
+	"github.com/v4fly/v4ray-core/v0/common/errors"
+	"github.com/v4fly/v4ray-core/v0/common/net"
+	"github.com/v4fly/v4ray-core/v0/transport/internet"
+	. "github.com/v4fly/v4ray-core/v0/transport/internet/kcp"
 )
 
 func TestDialAndListen(t *testing.T) {

@@ -7,7 +7,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/v2fly/v2ray-core/v5/common/dice"
+	"github.com/v4fly/v4ray-core/v0/common/dice"
 )
 
 // HealthPingSettings holds settings for health Checker

@@ -3,7 +3,7 @@
 
 package gvisor
 
-import "github.com/v2fly/v2ray-core/v5/app/tun/device"
+import "github.com/v4fly/v4ray-core/v0/app/tun/device"
 
 func New(options device.Options) (device.Device, error) {
 	return nil, newError("not supported").AtError()

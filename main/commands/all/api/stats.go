@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
-	statsService "github.com/v2fly/v2ray-core/v5/app/stats/command"
-	"github.com/v2fly/v2ray-core/v5/common/units"
-	"github.com/v2fly/v2ray-core/v5/main/commands/base"
+	statsService "github.com/v4fly/v4ray-core/v0/app/stats/command"
+	"github.com/v4fly/v4ray-core/v0/common/units"
+	"github.com/v4fly/v4ray-core/v0/main/commands/base"
 )
 
 var cmdStats = &base.Command{

@@ -6,9 +6,9 @@ package dns
 import (
 	"context"
 
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/features/dns"
-	"github.com/v2fly/v2ray-core/v5/features/dns/localdns"
+	"github.com/v4fly/v4ray-core/v0/common/net"
+	"github.com/v4fly/v4ray-core/v0/features/dns"
+	"github.com/v4fly/v4ray-core/v0/features/dns/localdns"
 )
 
 // LocalNameServer is an wrapper over local DNS feature.

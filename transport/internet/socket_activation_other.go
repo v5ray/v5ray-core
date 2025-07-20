@@ -5,7 +5,7 @@ package internet
 
 import (
 	"fmt"
-	"github.com/v2fly/v2ray-core/v5/common/net"
+	"github.com/v4fly/v4ray-core/v0/common/net"
 )
 
 func activateSocket(address string, f func(network, address string, fd uintptr)) (net.Listener, error) {

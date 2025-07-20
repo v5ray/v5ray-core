@@ -5,8 +5,8 @@ import (
 	"log"
 	"os"
 
-	logService "github.com/v2fly/v2ray-core/v5/app/log/command"
-	"github.com/v2fly/v2ray-core/v5/main/commands/base"
+	logService "github.com/v4fly/v4ray-core/v0/app/log/command"
+	"github.com/v4fly/v4ray-core/v0/main/commands/base"
 )
 
 var cmdLog = &base.Command{

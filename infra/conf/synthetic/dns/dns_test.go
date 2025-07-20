@@ -10,14 +10,14 @@ import (
 
 	"google.golang.org/protobuf/runtime/protoiface"
 
-	"github.com/v2fly/v2ray-core/v5/app/dns"
-	"github.com/v2fly/v2ray-core/v5/app/dns/fakedns"
-	"github.com/v2fly/v2ray-core/v5/common"
-	"github.com/v2fly/v2ray-core/v5/common/net"
-	"github.com/v2fly/v2ray-core/v5/common/platform/filesystem"
-	"github.com/v2fly/v2ray-core/v5/infra/conf/cfgcommon/testassist"
-	_ "github.com/v2fly/v2ray-core/v5/infra/conf/geodata/standard"
-	dns2 "github.com/v2fly/v2ray-core/v5/infra/conf/synthetic/dns"
+	"github.com/v4fly/v4ray-core/v0/app/dns"
+	"github.com/v4fly/v4ray-core/v0/app/dns/fakedns"
+	"github.com/v4fly/v4ray-core/v0/common"
+	"github.com/v4fly/v4ray-core/v0/common/net"
+	"github.com/v4fly/v4ray-core/v0/common/platform/filesystem"
+	"github.com/v4fly/v4ray-core/v0/infra/conf/cfgcommon/testassist"
+	_ "github.com/v4fly/v4ray-core/v0/infra/conf/geodata/standard"
+	dns2 "github.com/v4fly/v4ray-core/v0/infra/conf/synthetic/dns"
 )
 
 func init() {
